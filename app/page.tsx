@@ -106,12 +106,16 @@ export default function Website() {
             alt="Gokul Reddy"
             className="w-32 h-32 rounded-xl mb-6 object-cover"
         />
-        <h1 className={`text-5xl font-bold ${textColor} mb-4`}>Gokul Reddy Muddarla</h1>
+        <h1 className={`text-5xl font-bold ${textColor} mb-4`}>Hello, I'm Gokul Reddy!</h1>
         <p className={`text-xl ${secondaryText} mb-6`}>
           Machine Learning & AI Researcher
         </p>
         <p className={`text-lg ${secondaryText} leading-relaxed mb-6 max-w-2xl`}>
-          Based in San Francisco. I&apos;m passionate about machine learning, artificial intelligence, and building intelligent systems. My work focuses on AI agents, optimization algorithms, and practical applications of machine learning to real-world problems.
+          Machine Learning Lead passionate about bridging research and applied ML — turning cutting-edge algorithms into high-performing models that drive real business impact. Over the past 7+ years, I’ve built ML solutions in search, ranking, and ad systems, delivering measurable improvements in click-through, conversion, and revenue for products serving millions of users.
+
+My expertise spans classical machine learning, deep learning, recommendation systems, reinforcement learning, contextual bandits, and emerging areas like LLMs. I bring end-to-end ownership — from problem framing and feature engineering to model development, rigorous offline evaluation, and online experimentation.
+
+With a proven track record of translating research into production models at scale, I focus on solutions where reliability, impact, and user experience matter most — while also leading cross-functional teams to bring these models to life.
         </p>
       </div>
 
