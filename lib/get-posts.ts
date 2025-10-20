@@ -13,6 +13,10 @@ export interface Post {
 }
 
 export function getAllPosts(): Post[] {
+  if (!fs.existsSync(blogPostsDirectory)) {
+    return [];
+  }
+
   const files = fs.readdirSync(blogPostsDirectory);
 
   const posts = files

@@ -3,11 +3,19 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 
+interface BlogPost {
+  id: number;
+  title: string;
+  date: string;
+  summary: string;
+  content: string;
+}
+
 export default function Website() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('home');
   const [darkMode, setDarkMode] = useState(false);
-  const [selectedPost, setSelectedPost] = useState(null);
+  const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 
   useEffect(() => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -186,7 +194,7 @@ export default function Website() {
 
       <div className={`mt-12 ${inputBg} border ${borderColor} rounded-lg p-6`}>
         <h3 className={`font-semibold ${textColor} mb-2`}>How to add new notes:</h3>
-        <p className={secondaryText}>Create a new markdown file in your <code className={`${cardBg} px-2 py-1 rounded`}>/blog</code> folder with the date and title. Example: <code className={`${cardBg} px-2 py-1 rounded`}>2025-10-19-paper-title.md</code></p>
+        <p className={secondaryText}>Create a new markdown file in your <code className={`${cardBg} px-2 py-1 rounded`}>/blog-posts</code> folder with the date and title. Example: <code className={`${cardBg} px-2 py-1 rounded`}>2025-10-19-paper-title.mdx</code></p>
       </div>
     </div>
   );
