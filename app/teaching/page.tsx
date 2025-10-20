@@ -7,7 +7,7 @@ export default function TeachingPage() {
         <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-blue-500 transition">
-              M. Gokul Reddy
+              Gokul Reddy Muddarla
             </Link>
 
             <div className="hidden md:flex gap-8 items-center">

@@ -59,7 +59,7 @@ export default function Website() {
             onClick={() => { setCurrentPage('home'); setIsMenuOpen(false); }}
             className={`text-2xl font-bold ${textColor} hover:text-blue-500 transition`}
           >
-            M. Gokul Reddy
+            Gokul Reddy Muddarla
           </button>
 
           <div className="hidden md:flex gap-8 items-center">
@@ -102,7 +102,7 @@ export default function Website() {
     <div className="max-w-4xl mx-auto px-6 py-12">
       <div className="mb-12">
         <div className={`w-32 h-32 ${inputBg} rounded-xl mb-6`}></div>
-        <h1 className={`text-5xl font-bold ${textColor} mb-4`}>M. Gokul Reddy</h1>
+        <h1 className={`text-5xl font-bold ${textColor} mb-4`}>Gokul Reddy Muddarla</h1>
         <p className={`text-xl ${secondaryText} mb-6`}>
           Machine Learning & AI Researcher
         </p>
@@ -266,7 +266,7 @@ export default function Website() {
 
       <footer className={`${cardBg} border-t ${borderColor} mt-16`}>
         <div className="max-w-4xl mx-auto px-6 py-8 text-center">
-          <p className={secondaryText}>© 2025 M. Gokul Reddy. All rights reserved.</p>
+          <p className={secondaryText}>© 2025 Gokul Reddy Muddarla. All rights reserved.</p>
         </div>
       </footer>
     </div>
