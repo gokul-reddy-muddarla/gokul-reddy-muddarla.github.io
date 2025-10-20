@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, Mail, Github, Linkedin } from 'lucide-react';
 
 interface BlogPost {
   id: number;
@@ -107,7 +107,7 @@ export default function Website() {
           Machine Learning & AI Researcher
         </p>
         <p className={`text-lg ${secondaryText} leading-relaxed mb-6 max-w-2xl`}>
-          Based in San Francisco. I'm passionate about machine learning, artificial intelligence, and building intelligent systems. My work focuses on AI agents, optimization algorithms, and practical applications of machine learning to real-world problems.
+          Based in San Francisco. I&apos;m passionate about machine learning, artificial intelligence, and building intelligent systems. My work focuses on AI agents, optimization algorithms, and practical applications of machine learning to real-world problems.
         </p>
       </div>
 
@@ -136,10 +136,34 @@ export default function Website() {
 
       <div className="mb-12">
         <h2 className={`text-2xl font-bold ${textColor} mb-6`}>Contact</h2>
-        <div className={`space-y-2 ${secondaryText}`}>
-          <p>Email: <span className={`font-semibold ${textColor}`}>mgokul.reddy@gmail.com</span></p>
-          <p>GitHub: <a href="https://github.com/gokul-reddy-muddarla" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">github.com/gokul-reddy-muddarla</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/m-gokul-reddy/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">linkedin.com/in/m-gokul-reddy</a></p>
+        <div className="flex gap-6">
+          <a
+            href="mailto:mgokul.reddy@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`p-3 rounded-lg ${inputBg} hover:bg-blue-500 hover:text-white transition`}
+            title="Email"
+          >
+            <Mail size={24} />
+          </a>
+          <a
+            href="https://github.com/gokul-reddy-muddarla"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`p-3 rounded-lg ${inputBg} hover:bg-blue-500 hover:text-white transition`}
+            title="GitHub"
+          >
+            <Github size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/m-gokul-reddy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`p-3 rounded-lg ${inputBg} hover:bg-blue-500 hover:text-white transition`}
+            title="LinkedIn"
+          >
+            <Linkedin size={24} />
+          </a>
         </div>
       </div>
     </div>
@@ -174,7 +198,7 @@ export default function Website() {
   const BlogListPage = () => (
     <div className="max-w-4xl mx-auto px-6 py-12">
       <h1 className={`text-3xl font-bold ${textColor} mb-2`}>Reading Notes</h1>
-      <p className={`${secondaryText} mb-8`}>Weekly notes on papers and books I'm reading in ML/NLP</p>
+      <p className={`${secondaryText} mb-8`}>Weekly notes on papers and books I&apos;m reading in ML/NLP</p>
 
       <div className="space-y-4">
         {blogPosts.map(post => (
