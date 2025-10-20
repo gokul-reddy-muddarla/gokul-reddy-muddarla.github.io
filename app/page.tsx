@@ -101,7 +101,11 @@ export default function Website() {
   const HomePage = () => (
     <div className="max-w-4xl mx-auto px-6 py-12">
       <div className="mb-12">
-        <div className={`w-32 h-32 ${inputBg} rounded-xl mb-6`}></div>
+        <img
+            src="/photo.jpg"
+            alt="Gokul Reddy"
+            className="w-32 h-32 rounded-xl mb-6 object-cover"
+        />
         <h1 className={`text-5xl font-bold ${textColor} mb-4`}>Gokul Reddy Muddarla</h1>
         <p className={`text-xl ${secondaryText} mb-6`}>
           Machine Learning & AI Researcher
